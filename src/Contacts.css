@@ -1,0 +1,126 @@
+body {
+  background: #fbf8c9; /* Soft beige background color */
+  background-image: url('https://th.bing.com/th/id/OIP.u3t3Is7jCtt9DDiLUJOSygAAAA?pid=ImgDet&rs=1'); /* Replace 'your-image.jpg' with your image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay; /* Overlay the pattern with background color */
+  background-position: center center;
+}
+
+/* Rest of your CSS styles remain the same */
+/* ... */
+
+
+/* Rest of your CSS styles remain the same */
+/* ... */
+
+/* Container styles */
+.container {
+  background-color: #dce78a; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h2 {
+  text-align: center;
+  font-size: 36px; /* Larger font size */
+  margin-bottom: 20px;
+  color: #2e86de; /* Dark blue text color */
+  background: linear-gradient(135deg, #fb3415, #eb65a0); /* Gradient background with two colors */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Make text transparent to show the gradient background */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Delete button styles */
+button {
+  /* Existing styles */
+  position: relative;
+  overflow: hidden;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: rgba(214, 245, 164, 0.5); /* Change color as needed */
+  border-radius: 100%;
+  opacity: 0;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+button:hover:after {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+
+button:hover {
+  background-color: #8a913e; /* Lighter red on hover */
+}
+
+/* Form styles */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #e4dedf; /* Add a green border */
+  border-radius: 5px;
+  outline: none;
+}
+
+
+button.add-button {
+  text-align: end;
+  background-color: #441f9b; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button.add-button:hover {
+  background-color: #2980b9; /* Lighter blue on hover */
+}
